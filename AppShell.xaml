@@ -10,7 +10,7 @@
 
         <!-- One of the nav items: When clicked, it will have footer nav with ShellContent items listed inside it. -->
         <!-- The title Astronomy is the nav title on the flyout nav that will appear -->
-    <FlyoutItem >
+    <FlyoutItem  >
 
         <ShellContent Title="Home" Icon="home.png"
                 ContentTemplate="{DataTemplate local2:MainPage}" />

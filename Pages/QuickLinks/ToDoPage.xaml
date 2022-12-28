@@ -29,6 +29,9 @@
                 FontSize="18"
                 HorizontalOptions="Center" />
 
+            <Button 
+                x:Name="note" 
+                Text="Add Item" />
 
         </VerticalStackLayout>
     </ScrollView>
