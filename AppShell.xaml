@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MyMauiAppProject.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MyMauiAppProject.Pages.QuickLinks"
+    xmlns:local2="clr-namespace:MyMauiAppProject"
+    FlyoutBehavior="Disabled"
+    >
+
+        <!-- One of the nav items: When clicked, it will have footer nav with ShellContent items listed inside it. -->
+        <!-- The title Astronomy is the nav title on the flyout nav that will appear -->
+    <FlyoutItem >
+
+        <ShellContent Title="Home" Icon="home.png"
+                ContentTemplate="{DataTemplate local2:MainPage}" />
+
+        <ShellContent Title="Notes" Icon="notes.png"
+                ContentTemplate="{DataTemplate local:NotesPage}" />
+
+        <ShellContent Title="New" Icon="plus.png"
+                ContentTemplate="{DataTemplate local:NewItemPage}" />
+
+        <ShellContent Title="To do" Icon="history.png"
+                ContentTemplate="{DataTemplate local:ToDoPage}" />
+
+        <ShellContent Title="Completed" Icon="checked.png"
+                ContentTemplate="{DataTemplate local:CompletedPage}" />
+
+    </FlyoutItem>
+</Shell>
